@@ -1,0 +1,7 @@
+{
+    "env":{
+        "NODE_ENV": "development"
+    },
+    "watch": ["*.js","*.json"],
+    "igonre":["package*.js","client","nodemon.json","node_modules","public"]
+}
