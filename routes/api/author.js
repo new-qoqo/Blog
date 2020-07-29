@@ -6,7 +6,6 @@ const auSer = require('../../server/authorService')
 router.get('/', async (req, res)=>{
     // const result = auSer.getAuthor
     const id = req.query.id;
-    console.log(id);
     const result = await auSer.getAuthor(id);
     res.send(result);
 });

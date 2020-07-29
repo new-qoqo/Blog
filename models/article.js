@@ -6,6 +6,10 @@ const Article = sequelize.define('Article',{
         type: DataTypes.TEXT,
         allowNull: false
     },
+    markdown:{
+        type: DataTypes.TEXT,
+        allowNull: false
+    },
     imgurl: {
         type: DataTypes.STRING,
         allowNull: true

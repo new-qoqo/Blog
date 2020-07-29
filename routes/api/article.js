@@ -16,6 +16,13 @@ router.post('/',async (req,res)=>{
     res.send(result);
 });
 
+router.post('/modify', async(req, res)=>{
+    const content = req.body.article;
+    const id = req.body.id;
+    const result = await article.updataArticle(id,content);
+    res.send(result);
+})
+
 //删除文章
 router.delete('/:id',(req, res)=>{
     res.send('删除一篇文章')

@@ -21,6 +21,7 @@ app.use(express.static(staticRoot,{
     }
 }));
 
+
 app.use(cors());
 // {
 //     origin(origin, callback){
