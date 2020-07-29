@@ -13,7 +13,6 @@ router.get('/', async (req, res)=>{
 
 router.post('/', async (req, res)=>{
     const datas = req.body;
-    console.log(datas)
     const art = await arList.addArcHeard(datas);
     res.send(art);
 });
